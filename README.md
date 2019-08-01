@@ -1,5 +1,5 @@
 # 2019 Student Show Site (Kahe) 
-Final Code (copy) of 2019 Student Show Microsite
+Final (copy) of 2019 Student Show Microsite
 
 ## Links
 * Live site: (http://nma.kcc.hawaii.edu/2019studentshow/)[http://nma.kcc.hawaii.edu/2019studentshow/]
