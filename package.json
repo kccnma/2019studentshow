@@ -1,0 +1,28 @@
+{
+  "name": "freezerbase-gulp-current",
+  "version": "1.0.0",
+  "description": "freezer base",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freezerboxdesigns/freezerbase-gulp-current.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freezerboxdesigns/freezerbase-gulp-current/issues"
+  },
+  "homepage": "https://github.com/freezerboxdesigns/freezerbase-gulp-current#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.11.0"
+  }
+}

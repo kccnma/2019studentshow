@@ -1,0 +1,47 @@
+// Navigation
+nav{
+    position: fixed;
+    width: 100%;
+    top: 5%;
+    z-index: 30;
+    opacity: 0;
+    transform: translateY(-300%);
+    animation: slideDownIn .6s ease-in-out forwards;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+
+        li{
+            list-style: none;
+            margin: 0 10px;            
+
+            a{
+                color: white;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-small){
+    nav{
+        ul{
+            width: 95%;
+            justify-content: flex-end;
+    
+            li{
+                margin: 0 20px;
+
+                a{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+

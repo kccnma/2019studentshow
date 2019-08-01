@@ -1,0 +1,194 @@
+#students{
+    // height: 100vh;
+    width: 100%;
+    background: $tan;
+    padding: 30vh 0;
+    box-sizing: content-box;
+    position: relative;
+    color: white;
+
+    .container{
+        h1{
+            text-align: center;
+            font-family: $body-font;
+        }
+
+        .options{
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin-top: 5vh;
+
+            li{
+                list-style: none;
+                margin: 0;
+                position: relative;
+                font-weight: 300;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    background: $brown;
+                    height: 2px;
+                    width: 100%;
+                    opacity: 0;
+                    transition: all .3s ease;
+                }
+
+                &:hover{
+                    &::before{
+                        opacity: 1;
+                    }
+                }
+            }
+
+            // If the li is clicked toggle the active class for a selected state
+            li.active{
+                &::before{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: $breakpoint-small){
+    #students{
+        .container{
+            padding: 5vh 0;
+
+            .options{
+                width: 80%;
+                margin: 10vh auto 0 auto;
+
+                li{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: $breakpoint-medium){
+    #students{
+        .container{
+            padding: 5vh 0;
+
+            .options{
+                width: 60%;
+                margin: 10vh auto 0 auto;
+
+                li{
+                    font-size: 1.7rem;
+
+                    &::before{
+                        bottom: -15px;
+                        height: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: $breakpoint-large){
+    #students{
+        .container{
+            padding: 5vh 0;
+
+            h1{
+                font-size: 6rem;
+            }
+
+            .options{
+                width: 60%;
+                margin: 10vh auto 0 auto;
+
+                li{
+                    font-size: 2.5rem;
+
+                    &::before{
+                        bottom: -25px;
+                        height: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Use this for breakpoint-small
+#selection-grid{
+    justify-content: center;
+    margin-top: 10vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    // Make these bigger according to breakpoint
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(8, 150px);
+    grid-gap: 20px;
+
+    .student-box{
+        // background: red;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transition: all .1s linear;
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            object-fit: cover;
+            transition: all .3s ease-in;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            // for the bg img hover effect
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transition: all .1s linear;
+
+            a{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                color: white;
+            }
+
+            h3{
+                font-size: 16px;
+            }
+        }
+
+        &:hover{
+            .overlay{
+                opacity: 1;
+                // background: red;
+            }
+        }
+    }
+}
+
+@media(min-width: $breakpoint-small){
+    #selection-grid{
+        grid-template-columns: repeat(4, 150px);
+        grid-template-rows: repeat(4, 150px); 
+    }
+}

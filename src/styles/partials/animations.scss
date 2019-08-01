@@ -1,0 +1,65 @@
+//Nav Loading Animation only
+@keyframes slideDownIn{
+    0%{
+        transform: translateY(-300%);
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+        transform: translateY(-300%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+// Other keyframes
+
+.animate-me.fadeIn{
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+} 
+
+@keyframes slideDown {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideRightFade {
+    0%{
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeftFade {
+    0%{
+        transform: translateX(10%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}

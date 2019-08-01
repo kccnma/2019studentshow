@@ -1,0 +1,23 @@
+//! VARIABLES
+$dark-blue: #131E27;
+$tan: #D2BB8F;
+$brown: #806022;
+$maroon: #3C090D;
+$light-blue: #5C768B;
+$heading-font: 'Playfair Display', serif;
+$body-font: 'soleil', sans-serif;
+$fish-blue: #ACBAC4;
+//? Media Queries 
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1824px;
+
+@import "./partials/navigation";
+@import "./partials/global";
+@import "./partials/typography";
+@import "./partials/hero";
+@import "./partials/schedule";
+@import "./partials/students";
+@import "./partials/map";
+@import "./partials/sponsors";
+@import "./partials/animations";

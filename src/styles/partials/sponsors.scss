@@ -1,0 +1,75 @@
+#sponsors{
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    background: url(./img/water-pattern.png);
+    // background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+@media(min-width: $breakpoint-small){
+    #sponsors{
+        height: 100vh;
+
+        .container{
+            h1{
+                font-size: 4rem;
+            }
+
+            .content{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 1.4rem;
+            }
+        }
+    }
+}
+
+@media(min-width: $breakpoint-medium){
+    #sponsors{
+        background-attachment: fixed;
+
+        .container{
+            h1{
+                font-size: 6rem;
+            }
+
+            .content{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 1.4rem;
+
+                p{
+                    font-size: 1.4rem;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: $breakpoint-large){
+    #sponsors{
+        .container{
+            h1{
+                font-size: 8rem;
+            }
+
+            .content{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 5rem;
+
+                p{
+                    font-size: 3rem;
+                    line-height: 3.3rem;
+                }
+            }
+        }
+    }
+}

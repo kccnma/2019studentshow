@@ -1,0 +1,113 @@
+#map{
+    height: 100vh;
+    padding: 10vh 0;
+    box-sizing: content-box;
+    width: 100%;
+    background: $maroon;
+    color: white;
+    position: relative;
+    
+    .container{
+        box-sizing: border-box;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+
+        .circle-map{
+            display: grid;
+            place-items: center;
+            height: 100%;
+            width: 100%;
+
+            .map-container{
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                background: white;
+                overflow: hidden;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: $breakpoint-small){
+    #map{
+        .container{
+            .parking{
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media(min-width: $breakpoint-medium){
+    #map{
+        .container{
+            height: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+    
+            .circle-map{
+                display: grid;
+                place-items: center;
+                width: 50%;
+
+                .map-container{
+                    height: 500px;
+                    width: 500px;
+                }
+            }
+
+            .parking{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h1{
+                    font-size: 4rem;
+                }
+
+                p{
+                    margin-top: 1rem;
+                    font-size: 1.4rem;
+                    line-height: 1.9rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: $breakpoint-large){
+    #map{
+        .container{
+            .circle-map{
+                .map-container{
+                    height: 800px;
+                    width: 800px;
+                }
+            }
+
+            .parking{
+                h1{
+                    font-size: 6rem;
+                }
+
+                p{
+                    margin-top: 2rem;
+                    font-size: 2.4rem;
+                    line-height: 3rem;
+                }
+            }
+        }
+    }
+}

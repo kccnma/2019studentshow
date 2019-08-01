@@ -1,0 +1,184 @@
+#schedule{
+    padding: 20vh 0;
+    text-align: center;
+    height: 100vh;
+    box-sizing: content-box;
+    background: $dark-blue;
+    color: white;
+    overflow: hidden;
+    position: relative;
+
+    svg{
+        position: absolute;
+        height: 30%;
+        z-index: 1;
+        fill: $fish-blue;
+    }
+
+    .top-fish{
+        top: -5%;
+        left: -10%;
+    }
+
+    .bottom-fish{
+        bottom: -5%;
+        right: -10%;
+    }
+
+    .container{
+        position: relative;
+        z-index: 9;
+
+        .date{
+            padding-top: 5%;
+        }
+
+        .content{
+            padding-top: 5%;
+
+            .block{
+                margin-top: 10%;
+            }
+        }
+    }
+}
+
+@media(min-width: $breakpoint-medium){
+    #schedule{
+        text-align: centered;
+        padding: 40vh 0;
+
+        svg{
+            height: 40%;
+        }
+    
+        .top-fish{
+            top: -10%;
+            left: 0%;
+        }
+    
+        .bottom-fish{
+            bottom: -10%;
+            right: 0;
+        }
+
+    
+        .container{
+            .cta{
+                font-size: 3rem;
+                font-family: $body-font;
+                font-weight: 700;
+            }
+
+            .date-info{
+                padding-top: 2%;
+
+
+                .date{
+                    font-size: 1.2rem;
+                }
+
+                h3{
+                    font-size: 3rem;
+                }
+
+                .time{
+                    font-size: 1.3rem;
+                }
+            }
+    
+            .content{
+                width: 70%;
+                margin: 0 auto;
+                padding-top: 10%;
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+                // border: 1px solid red;
+    
+                .block{
+                    margin-top: 0%;
+                    width: 40%;
+                    // border: 1px solid red;
+
+                    span,
+                    p{
+                        font-size: 1.3rem;
+                        line-height: 1.5rem;
+                        font-weight: 300;
+                    }
+                }
+
+            }
+        }
+    } 
+}
+
+@media(min-width: $breakpoint-large){
+    #schedule{
+
+        svg{
+            height: 40%;
+        }
+    
+        .top-fish{
+            top: -10%;
+            left: 0%;
+        }
+    
+        .bottom-fish{
+            bottom: -10%;
+            right: 0;
+        }
+
+    
+        .container{
+            .cta{
+                font-size: 6rem;
+            }
+
+            .date-info{
+                padding-top: 2%;
+                .date{
+                    font-size: 2rem;
+                }
+
+                h3{
+                    font-size: 6rem;
+                }
+
+                .time{
+                    font-size: 2.5rem;
+                }
+            }
+    
+            .content{
+                width: 70%;
+                margin: 0 auto;
+                padding-top: 10%;
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+                // border: 1px solid red;
+    
+                .block{
+                    margin-top: 0%;
+                    width: 40%;
+                    // border: 1px solid red;
+
+                    h2{
+                        font-size: 4rem;
+                    }
+
+                    span,
+                    p{
+                        font-size: 2rem;
+                        line-height: 2.4rem;
+                        font-weight: 300;
+                    }
+                }
+
+            }
+        }
+    } 
+}

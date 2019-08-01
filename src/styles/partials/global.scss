@@ -1,0 +1,122 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.italic{
+    font-style: italic;
+}
+
+//Make the lines fadeIn and height on scroll
+@keyframes lineAppear{
+    0%{
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+        transform: scaleY(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+
+.line{
+    content: '';
+    background: white;
+    position: absolute;
+    z-index: 10;
+    width: 0.5%;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.line.line-1{
+    height: 50%;
+    bottom: -10%;
+}
+
+.line-2,
+.line-3,
+.line-4{
+    height: 20%;
+    left: 49.75%;
+}
+
+.line.line-2{
+    top: -10%;
+}
+
+.line.line-3{
+    bottom: -10%;
+}
+
+.line.line-4{
+    bottom: -10%;
+}
+
+@media(min-width: $breakpoint-small){
+    .line.line-1{
+        content: '';
+        bottom: -15%;
+    }
+    .line.line-2{
+        top: -10%;
+        height: 20%;
+    }
+    .line.line-3{
+        bottom: -10%;
+        height: 20%;
+    }
+
+    .line.line-4{
+        bottom: -10%;
+        height: 20%;
+    }
+}
+
+@media(min-width: $breakpoint-medium){
+    .line.line-1{
+        content: '';
+        bottom: -30%;
+    }
+    .line.line-2{
+        top: -15%;
+        height: 30%;
+    }
+    .line.line-3{
+        bottom: -15%;
+        height: 30%;
+    }
+    .line.line-4{
+        bottom: -15%;
+        height: 30%;
+    }
+}
+
+@media(min-width: $breakpoint-large){
+   
+}
